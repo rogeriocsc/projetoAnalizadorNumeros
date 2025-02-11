@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagem/ico-favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
     <title>Analizador de Números</title>
 </head>
 <body>
     <header>
-        <h2>Analizador de Números</h2>
+        <h1>Analizador de Números</h1>
     </header>
-    <main>
-        <section class="body">
-            <section class="elementos">
-                <div class="campo">
-                    <label for="f_num">Número</label>
-                    <input type="text" name="f_num" id="fnum" placeholder="Número (entre 1 e 100)">
-                </div>
+    <section class="f-analizador">
+        <div class="imagem"></div>
+        <div class="analizador">
+            <div class="campo">
+                <label for="fnum">Número (entre 1 e 100):</label>
+                <input type="text" name="f_num" id="fnum" placeholder="Número (entre 1 e 100)">
                 <button onclick="adicionar()">Adicionar</button>
-                <div class="res" id="res">
-                    <p>Exemplo: Número (entre 1 e 100)</p>
-                </div>
-            </section>
-            <section class="img">
-                <div class="list" id="flista"></div>
-                <button onclick="finalizar()">Finalizar</button>
-            </section>
-        </section>
-    </main>
+            </div>
+            <div class="campo">
+                <select name="flista" id="flista" size="6"></select>
+            </div>
+            <button onclick="finalizar()">Finalizar</button>
+            <div class="res" id="res"></div>
+        </div>
+    </section>
     <script src="js/script.js"></script>
-    <footer>
-        <p>copyright Analizador de Números 2025</p>
-    </footer>
 </body>
 </html>
