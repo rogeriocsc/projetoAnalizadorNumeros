@@ -3,9 +3,12 @@
     padding: 0px;
 }
 
-body, html {
+body {
     background-image: linear-gradient(to top, #00cec0, rgb(47, 47, 150));
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
     height: 100vh;
     width: 100vw;
 }
@@ -16,13 +19,7 @@ main {
     width: 100vw;
 }
 
-header > h1 {
-    text-align: center;
-    padding: 10px;
-    color: white;
-}
-
-section.f-analizador {
+section.projeto-numeros {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,11 +28,11 @@ section.f-analizador {
     background-color: white;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.452);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.336);
     transform: translate(-50%, -50%);
 }
 
-section.f-analizador > div.imagem {
+section.projeto-numeros > div.imagem {
     float: right;
     width: 50%;
     height: 100%;
@@ -45,14 +42,18 @@ section.f-analizador > div.imagem {
     background-repeat: no-repeat;
 }
 
-section.f-analizador > div.analizador {
+section.projeto-numeros > div.analizador {
     float: left;
     width: 50%;
 }
 
-div.campo {
+div.analizador {
     text-align: center;
-    margin-top: 20px;
+}
+
+div.analizador > h1 {
+    margin: 10px 0px;
+    color: rgb(255, 0, 0);
 }
 
 div.campo label {
@@ -79,10 +80,9 @@ div.campo label {
     margin-top: 10px;
 }
 
-.campo button {
+.campo > button {
     width: 100px;
     height: 40px;
-    margin-left: 5px;
     background-color: #038C3E;
     color: white;
     font-size: 1.04em;
@@ -91,15 +91,14 @@ div.campo label {
     cursor: pointer;
 }
 
-.campo button:hover {
+.campo > button:hover {
     background-color: #03A64A;
 }
 
 .analizador > button {
-    margin: 8px auto;
-    display: block;
     width: 100px;
     height: 40px;
+    margin-top: 14px;
     background-color: #193C40;
     color: white;
     font-size: 1.04em;
@@ -108,7 +107,7 @@ div.campo label {
     cursor: pointer;
 }
 
-.analizador > button:hover{
+.analizador > button:hover {
     background-color: #286066;
 }
 

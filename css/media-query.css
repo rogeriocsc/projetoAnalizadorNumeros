@@ -1,34 +1,19 @@
 @charset "UTF-8";
 
-/* Todas as demais midias */
-/* Typical Device Breakpoints 
-------------------------------
-Pequenas telas: até 600px
-Celular: de 600px até 768px
-Tablet: 768px até 992px
-Desktop: 992px até 1200px
-Grandes Telas: Acima de 1200px
-*/
-
 /* Tablet: 768px até 992px */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body {
-        background-image: linear-gradient(to top, #00cec0, rgb(47, 47, 150));
-    }
-
-    section.f-analizador {
+    section.projeto-numeros {
         width: 90vw;
-        height: 470px;
     }
 
-    section.f-analizador > div.imagem {
+    section.projeto-numeros > div.imagem {
         float: left;
         width: 40%;
         height: 100%;
         background-position: center center;
     }
 
-    section.f-analizador > div.analizador {
+    section.projeto-numeros > div.analizador {
         float: right;
         width: 60%;
     }
@@ -40,27 +25,22 @@ Grandes Telas: Acima de 1200px
         background: rgb(47, 47, 150);
     }   
 
-    section.f-analizador {
-        margin-top: 20px;
+    section.projeto-numeros {
         width: 300px;
-        height: 530px;
+        height: 540px;
     }
 
-    section.f-analizador > div.imagem {
+    section.projeto-numeros > div.imagem {
         width: 100%;
-        height: 100px;
+        height: 90px;
     }
 
-    section.f-analizador > div.analizador {
+    section.projeto-numeros > div.analizador {
         width: 100%;
-    }
-
-    div.campo label {
-        margin: 0px 65px 5px 0px;
     }
     
     .campo select {
         width: 180px;
-        height: 30px;
+        height: 40px;
     }
 }
